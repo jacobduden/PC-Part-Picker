@@ -16,7 +16,9 @@ const partSchema = new Schema(
         },
         price: {
             type: Number,
-            required: true
+        },
+        description: {
+            type: String
         },
         image: {
             type: String
