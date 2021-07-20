@@ -8,22 +8,22 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbarContainer'>
                     <Link to='/dashboard' className='navbar-logo'>
-                        <i className='fab fa-react' /> Portfolio
+                        <i className='fab fa-react' /> PC-Part-Picker
                     </Link>
                     <ul className='navnav'>
                       <li className='nav-item'>
-                        <Link to='/aboutme' className='nav-links'>
-                          About me
+                        <Link to='/#' className='nav-links'>
+                          #
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link to='/projects' className='nav-links'>
-                          Projects
+                        <Link to='/#' className='nav-links'>
+                          #
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link to='/myresume' className='nav-links'>
-                          Resume
+                        <Link to='/#' className='nav-links'>
+                          #
                         </Link>
                       </li>
                       <li className='nav-item'>
