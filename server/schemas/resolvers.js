@@ -36,7 +36,7 @@ me: async (context, args)=>{
             return {token, user}
         },
 
-        savePart: async (context, args)=>{
+        saveGame: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
@@ -47,7 +47,7 @@ me: async (context, args)=>{
             }
             throw new AuthenticationError('Must be logged in to add a part to the build cart!');
         },
-        removePart: async (context, args)=>{
+        saveGame: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
