@@ -12,18 +12,18 @@ function Navbar() {
                     </Link>
                     <ul className='navnav'>
                       <li className='nav-item'>
-                        <Link to='/HotReleases' className='nav-links'>
-                          Hot Releases
+                        <Link to='/Games' className='nav-links'>
+                          Games
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link to='/Trending' className='nav-links'>
-                          Trending
+                        <Link to='/Wishlist' className='nav-links'>
+                          Wishlist
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link to='/Mostplayed' className='nav-links'>
-                          Most Played
+                        <Link to='/Playercard' className='nav-links'>
+                          PlayerCard
                         </Link>
                       </li>
                       <li className='nav-item'>
