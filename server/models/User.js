@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const partSchema = require('./Game')
+const gameSchema = require('./Game')
 
 const userSchema = new Schema(
     {
@@ -11,7 +11,7 @@ const userSchema = new Schema(
             unique: true
         },
         email: {
-            String,
+            type: String,
             required: true,
             unique: true,
             match: [/.+@.+\..+/, 'Must use a valid email address']
@@ -20,7 +20,7 @@ const userSchema = new Schema(
             type: String,
             required: true
         },
-        savedParts: [partSchema]
+        savedGames: [gameSchema]
     },
     {
         toJSON: {
