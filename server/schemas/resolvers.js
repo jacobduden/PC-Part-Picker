@@ -5,7 +5,7 @@ const { signToken } = require('../utils/Auth');
 
 const resolvers = {
     Query: {
-me: async (parent, context, args)=>{
+me: async (context, args)=>{
     if(context.user){
         const userData = await User.findOne({})
         .select('-__v -password')
@@ -17,13 +17,13 @@ me: async (parent, context, args)=>{
     },
 
     Mutation: {
-        addUser: async (parent, context, args) =>{
+        addUser: async (context, args) =>{
             const user = await User.create(args.body.variables)
             const token = signToken(user)
             return {token, user}
         },
         
-        login: async (parent,{email, password})=>{
+        login: async ({email, password})=>{
             const user = await User.findOne({email})
             if(!user){
                 throw new AuthenticationError('That is not a valid email address.')
@@ -36,7 +36,7 @@ me: async (parent, context, args)=>{
             return {token, user}
         },
 
-        savePart: async (parent, context, args)=>{
+        savePart: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
@@ -47,7 +47,7 @@ me: async (parent, context, args)=>{
             }
             throw new AuthenticationError('Must be logged in to add a part to the build cart!');
         },
-        removePart: async (parent, context, args)=>{
+        removePart: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},

@@ -1,0 +1,14 @@
+.ContactH1{
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.email-phone{
+    display: flex;
+    justify-content: center;
+}
+.ContactSub{
+    text-align: center;
+    padding-bottom: 15vh;
+}
