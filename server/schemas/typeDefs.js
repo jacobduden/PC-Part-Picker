@@ -5,24 +5,26 @@ type User {
     _id: ID!
     username: String!
     email: String!
-    savedParts: [partSchema]
+    savedGames: [gameSchema]
 }
 
-type PartSchema {
-    partId: String
+type gameSchema {
+    gameId: String
     seller: String
-    partName: String
+    Title: String
     price: Int
     image: String
+    description: String
     link: String
 }
 
-input PartInput {
-    partId: String
+input gameInput {
+    gameId: String
     seller: String
-    partName: String
+    title: String
     price: Int
     image: String
+    description: String
     link: String
 }
 
@@ -38,8 +40,8 @@ type Auth {
     type Mutation {
         login(username: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        savePart(input: partInput): User
-        removePart(partId: String!): User
+        saveGame(input: gameInput): User
+        removegame(gameId: String!): User
     }
 `;
 

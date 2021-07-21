@@ -1,4 +1,4 @@
-const { User, Part } = require('../models');
+const { User, Game } = require('../models');
 const { AuthenticationError } = require('apollo-server-express')
 const { signToken } = require('../utils/Auth');
 
@@ -9,7 +9,7 @@ me: async (parent, context, args)=>{
     if(context.user){
         const userData = await User.findOne({})
         .select('-__v -password')
-        .poputlate('parts')
+        .poputlate('games')
         return userData
     }
     throw new AuthenticationError('No user found!')
@@ -40,7 +40,7 @@ me: async (parent, context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
-                    {$addToSet:{partInput: args.input}},
+                    {$addToSet:{gameInput: args.input}},
                     {new: true}
                 );
                 return updateUser
@@ -51,7 +51,7 @@ me: async (parent, context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
-                    {$pull: {partId: args.partId}},
+                    {$pull: {gameId: args.gameId}},
                     {new: true}
                 );
                 return updateUser
