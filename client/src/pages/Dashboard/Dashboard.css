@@ -3,31 +3,55 @@
 }
 
 .home-main-cont {
-    position: relative;
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
-  }
-  
-  .home-main-cont2 {
-    padding: 6rem 0 5rem !important;
-    height: 500px !important;
-    color: #fff;
-    text-align: left;
-    background: url("../../../public/img/hero.jpg") no-repeat;
-    background-size: 100% 100%;
-    overflow: none;
-    margin-top: 10em !important;
-  }
-  
-  .home-main-header{
-    background-color: #12121241;
-  }
-  
-  .head-main-name {
-    font-size: 2.4em !important;
-    text-align: center;
-  }
-  
-  .head-main-desc {
-    font-size: 1.2em !important;
-  }
+  position: relative;
+  height: 100vh !important;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  background: url("../../images/hero.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: none;
+}
+
+.home-main-cont2 {
+  padding: 6rem 0 5rem !important;
+  color: #fffdd0;
+  text-align: left;
+  margin-top: 15em !important;
+  background-color: #1212126e;
+}
+
+.home-main-col{
+  height:50%;
+  margin-top: 6.25vh;
+  margin-bottom: 6.25vh;
+}
+
+.home-main-row{
+  height: 25vh !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.head-main-name {
+  font-size: 2.4em !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.head-main-desc {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  padding: 20px !important;
+}
+
+.home-main-sect{
+  height:100% !important;
+}
+
+/* BOTTOM */
+
+.home-bot-cont{
+  padding-top: 170px !important;
+  padding-bottom: 100px !important;
+  height: 500px;
+}
