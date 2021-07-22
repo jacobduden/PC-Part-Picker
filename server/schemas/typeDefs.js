@@ -16,6 +16,8 @@ type gameSchema {
     image: String
     description: String
     link: String
+    genre: String
+    platform: String
 }
 
 input gameInput {
@@ -26,6 +28,8 @@ input gameInput {
     image: String
     description: String
     link: String
+    genre: String
+    platform: String
 }
 
 type Query {
@@ -41,7 +45,7 @@ type Auth {
         login(username: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         saveGame(input: gameInput): User
-        removegame(gameId: String!): User
+        removeGame(gameId: String!): User
     }
 `;
 

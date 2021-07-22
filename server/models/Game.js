@@ -25,6 +25,12 @@ const partSchema = new Schema(
         },
         link: {
             type: String
+        },
+        platform: {
+            type: String
+        },
+        genre: {
+            type: String
         }
     }
 );

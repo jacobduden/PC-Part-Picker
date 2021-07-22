@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
 export const CREATE_USER = gql`
-mutation addUser($username: String!, $password: String!){
+mutation addUser($username: String!, $password: String!) {
     addUser(username: $username, password: $password) {
         User {
         _id
@@ -33,8 +33,8 @@ mutation login($email: String!, $password: String!) {
 `;
 
 export const SAVE_GAME = gql`
-mutation saveGame($input: gameInput){
-    saveGame(input: $input){
+mutation saveGame($input: gameInput) {
+    saveGame(input: $input) {
         _id
         username
         email
@@ -53,8 +53,8 @@ mutation saveGame($input: gameInput){
 `;
 
 export const REMOVE_GAME = gql`
-mutation removeGame($bookId: String!){
-    removeGame(gameId: $gameId){
+mutation removeGame($bookId: String!) {
+    removeGame(gameId: $gameId) {
         _id
         username
         email

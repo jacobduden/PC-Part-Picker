@@ -3,7 +3,6 @@ const path = require('path');
 const db = require('./config/connection');
 const { ApolloServer } = require('apollo-server-express');
 const { typeDefs, resolvers } = require('./schemas/index');
-const routes = require('./routes');
 const { authMiddleware } = require('./utils/Auth');
 
 const app = express();
@@ -20,7 +19,7 @@ server.applyMiddleware({ app });
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(routes);
+
 
 db.once('open', () => {
     app.listen(PORT, () => {
