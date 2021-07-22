@@ -10,7 +10,7 @@ function Footer() {
           <div class='footerLinkItems'>
             <h2>About Us</h2>
             <Link to='/signUp'>How it works</Link>
-            <Link to='/ToS'>Terms of Service</Link>
+            <Link to='/PrivacyPolicy'>Privacy Policy</Link>
           </div>
           <div class='footerLinkItems'>
             <h2>Contact Us</h2>
