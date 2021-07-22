@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Dashboard.css';
-import Games from '../Games/Games.js';
+import Games from '../GameExplorer/Games.js';
 
 export default function Dashboard () {
     return (

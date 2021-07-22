@@ -5,7 +5,7 @@ import Navbar from './pages/assets/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Games from './pages/Games/Games'
+import Games from './pages/GameExplorer/Games'
 
 function App(){
     return(
