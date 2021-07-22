@@ -2,7 +2,7 @@ const { Schema } = require('mongoose');
 
 const partSchema = new Schema(
     {
-        gameId: {
+        partId: {
             type: String,
             required: true
         },
@@ -10,7 +10,7 @@ const partSchema = new Schema(
             type: String,
             required: true
         },
-        title: {
+        partName: {
             type: String,
             required: true,
         },
