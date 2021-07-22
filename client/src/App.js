@@ -10,6 +10,8 @@ import Games from './pages/GameExplorer/Games'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
+import Wishlist from './pages/WishList/Wishlist';
+import UnderConst from './pages/UnderConst/UnderConst';
 
 function App(){
     return(
@@ -19,8 +21,8 @@ function App(){
                 <Switch>
                     <Route path='/' exact component={Dashboard}/>
                     <Route path='/Games' component={Games}/>
-                    {/* <Route path='/wishlist' component= {Wishlist}/>
-                    <Route path='/Playercard' component= {Playercard}/>*/}
+                    <Route path='/wishlist' component= {Wishlist}/>
+                    <Route path='/Playercard' component= {UnderConst}/>
                     <Route path='/Contact' component= {Contact}/>
                     <Route path='/PrivacyPolicy' component= {PrivacyPolicy}/>
                     <Route path='/Login' component = {Login}/>

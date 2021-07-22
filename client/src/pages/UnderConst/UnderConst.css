@@ -1,0 +1,36 @@
+*{font-family: 'Montserrat', sans-serif;}
+
+.const-sect{height:100% !important;}
+.const-cont{
+    position: relative;
+    height: 100vh !important;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+}
+.const-cont2{
+    padding: 3rem 0 5rem !important;
+    margin-top: 15em !important;
+}
+.const-row{
+    height: 25vh !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.const-col{
+    height:50%;
+    margin-top: 6.25vh;
+    margin-bottom: 6.25vh;
+}
+.const-title{
+    font-size: 5em !important;
+    text-align: center;
+    font-weight: bold;
+    color:#2323234b;
+}
+.const-desc{
+    font-size: 2.5em !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px !important;
+    color: #2323234b;
+}
