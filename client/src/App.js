@@ -6,7 +6,10 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Footer from './pages/assets/Footer';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Games from './pages/Games/Games'
+import Games from './pages/GameExplorer/Games'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import Contact from './pages/Contact/Contact';
+import Login from './pages/Login/Login';
 
 function App(){
     return(
@@ -17,10 +20,12 @@ function App(){
                     <Route path='/' exact component={Dashboard}/>
                     <Route path='/Games' component={Games}/>
                     {/* <Route path='/wishlist' component= {Wishlist}/>
-                    <Route path='/Playercard' component= {Playercard}/>
-                    <Route path='/Contact' component= {Contact}/> */}
+                    <Route path='/Playercard' component= {Playercard}/>*/}
+                    <Route path='/Contact' component= {Contact}/>
+                    <Route path='/PrivacyPolicy' component= {PrivacyPolicy}/>
+                    <Route path='/Login' component = {Login}/>
                 </Switch>
-                <Footer/>
+                <Footer/> 
             </Router>
         </div>
     );

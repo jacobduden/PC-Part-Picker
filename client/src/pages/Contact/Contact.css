@@ -1,9 +1,24 @@
+.ContactSection{
+    color: #be9e44;
+}
+.ContactSection a{
+    color: #3b3b3b;
+}
 .ContactH1{
     text-align: center;
     padding-top: 20vh;
     padding-bottom: 20vh;
+    padding-left: 2vw
 }
 .ContactSub{
     text-align: center;
     padding-bottom: 15vh;
 }
+.p-e-g-l{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+}
+
+
