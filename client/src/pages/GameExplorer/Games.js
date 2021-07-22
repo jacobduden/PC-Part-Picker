@@ -14,7 +14,7 @@ export default function Games(){
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://d250f2ux8pmbq4.cloudfront.net/uploads/game/logo/91/CivilizationVI-Aspyr-Logo__1_.png"/>
+                                    <img src="https://d250f2ux8pmbq4.cloudfront.net/uploads/game/logo/91/CivilizationVI-Aspyr-Logo__1_.png" alt="Strategy"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Strategy</h2>
@@ -25,14 +25,14 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://static.wikia.nocookie.net/logopedia/images/d/d4/Super_Mario_%281996-2014%29.svg/revision/latest?cb=20181206060417"/>
+                                    <img src="https://logos-world.net/wp-content/uploads/2021/02/Call-of-Duty-Logo.png" alt="Action"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Action</h2>
@@ -43,14 +43,14 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://logos-world.net/wp-content/uploads/2021/02/World-of-Warcraft-Logo-2004-present.png"/>
+                                    <img src="https://logos-world.net/wp-content/uploads/2021/02/World-of-Warcraft-Logo-2004-present.png" alt="Role-Playing"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Role-Playing</h2>
@@ -61,14 +61,14 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://i.pinimg.com/originals/f7/64/9c/f7649c881b37806774e5e5e3afe35932.png"/>
+                                    <img src="https://i.pinimg.com/originals/f7/64/9c/f7649c881b37806774e5e5e3afe35932.png" alt="Sports and Racing"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Sports and Racing</h2>
@@ -79,14 +79,14 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Assassin%27s_Creed_Logo.svg/1200px-Assassin%27s_Creed_Logo.svg.png"/>
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Assassin%27s_Creed_Logo.svg/1200px-Assassin%27s_Creed_Logo.svg.png" alt="Adventure"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Adventure</h2>
@@ -97,14 +97,14 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
                         <Container className="game-card-cont">
                             <Card className="game-card">
                                 <div className="game-card-img">
-                                    <img src="https://logos-download.com/wp-content/uploads/2016/12/Sims_logo_green.png"/>
+                                    <img src="https://logos-download.com/wp-content/uploads/2016/12/Sims_logo_green.png" alt="Simulation"/>
                                 </div>
                                 <div className="game-card-desc">
                                     <h2>Simulation</h2>
@@ -115,7 +115,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="#">Browse Now</a>
+                                    <a href="/underConst">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
