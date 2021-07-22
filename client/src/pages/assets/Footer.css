@@ -5,6 +5,9 @@ background-color: #131313;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 .footerLinks {
   width: 100%;
@@ -34,7 +37,7 @@ background-color: #131313;
   margin-bottom: 0.5rem;
 }
 .footerLinkItems a:hover {
-  color: #ad903e;
+  color: #8b6d1b;
   transition: 0.2s ease-out;
 }
 .media {
