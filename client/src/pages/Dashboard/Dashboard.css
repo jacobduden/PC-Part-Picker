@@ -1,8 +1,48 @@
-*{
-    font-family: 'Montserrat', sans-serif;
+*{font-family: 'Montserrat', sans-serif;}
+
+.home-main-cont {
+  position: relative;
+  height: 100vh !important;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  background: url("../../images/hero.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: none;
 }
-.desc{
-    display: flex;
-    justify-content: start;
-    padding-left: 15vw;
+
+.home-main-cont2 {
+  padding: 6rem 0 5rem !important;
+  color: #be9e44;
+  text-align: left;
+  margin-top: 15em !important;
+  background: rgba(19, 19, 19, 0.3);
+  background: radial-gradient(circle, rgba(19,19,19,.6) 60%, rgba(35,35,35,0) 70%);
+}
+
+.home-main-col{
+  height:50%;
+  margin-top: 6.25vh;
+  margin-bottom: 6.25vh;
+}
+
+.home-main-row{
+  height: 25vh !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.head-main-name {
+  font-size: 2.4em !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.head-main-desc {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  padding: 20px !important;
+}
+
+.home-main-sect{
+  height:100% !important;
 }

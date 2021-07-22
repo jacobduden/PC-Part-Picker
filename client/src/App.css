@@ -1,3 +1,10 @@
+html, body {height: auto; width: 100vw; background-color: #121212;}
+
+.bg{
+  height: 100%;
+  background-color: #121212;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +43,4 @@
     transform: rotate(360deg);
   }
 }
+
