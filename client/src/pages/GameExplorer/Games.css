@@ -4,7 +4,7 @@
 .games-cont{
     padding-top: 170px !important;
     padding-bottom: 100px !important;
-    height: 500px;
+    height: 100%;
 }
 
 .games-title{
@@ -20,7 +20,6 @@
     align-items: center;
     min-height: 100vh;
     background: #131313;
-    padding-left: 11rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 3px;
 }

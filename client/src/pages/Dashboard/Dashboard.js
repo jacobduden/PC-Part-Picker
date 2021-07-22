@@ -11,7 +11,10 @@ export default function Dashboard () {
                     <Row className="home-main-row">
                         <Col className="home-main-col">
                             <h1 className="head-main-name" style={{padding:20}}>Looking for new games to play?</h1>
-                            <h3 className="head-main-desc" style={{padding:50, textAlign: 'center'}}>Here are some popular games!</h3>
+                            <div className='Buttons'>
+                            <a role="button" class="btn btn-primary" id='logIN' href='/Login'>LOG IN</a>
+                            <a role="button" class="btn btn-primary" id='singUP' href='/Login'>SIGN UP</a>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

@@ -46,3 +46,8 @@
 .home-main-sect{
   height:100% !important;
 }
+.Buttons{
+  display: flex;
+  justify-content: center;
+  color: #be9e44 !important;
+}
