@@ -1,6 +1,4 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-}
+*{font-family: 'Montserrat', sans-serif;}
 
 .home-main-cont {
   position: relative;
@@ -14,10 +12,11 @@
 
 .home-main-cont2 {
   padding: 6rem 0 5rem !important;
-  color: #fffdd0;
+  color: #be9e44;
   text-align: left;
   margin-top: 15em !important;
-  background-color: #1212126e;
+  background: rgba(19, 19, 19, 0.3);
+  background: radial-gradient(circle, rgba(19,19,19,.6) 60%, rgba(35,35,35,0) 70%);
 }
 
 .home-main-col{
@@ -46,12 +45,4 @@
 
 .home-main-sect{
   height:100% !important;
-}
-
-/* BOTTOM */
-
-.home-bot-cont{
-  padding-top: 170px !important;
-  padding-bottom: 100px !important;
-  height: 500px;
 }

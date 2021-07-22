@@ -5,6 +5,7 @@ import Navbar from './pages/assets/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Games from './pages/Games/Games'
 
 function App(){
     return(
@@ -13,8 +14,8 @@ function App(){
                 <Navbar />
                 <Switch>
                     <Route path='/' exact component={Dashboard}/>
-                    {/*<Route path='/Games' component={Games}/>
-                    <Route path='/wishlist' component= {Wishlist}/>
+                    <Route path='/Games' component={Games}/>
+                    {/* <Route path='/wishlist' component= {Wishlist}/>
                     <Route path='/Playercard' component= {Playercard}/>
                     <Route path='/Contact' component= {Contact}/> */}
                 </Switch>

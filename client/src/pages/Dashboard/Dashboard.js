@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Dashboard.css';
+import Games from '../Games/Games.js';
 
-function Dashboard () {
+export default function Dashboard () {
     return (
-        <>
         <section className='home-main-sect'>
             <Container fluid className="home-main-cont">
                 <Container className="home-main-cont2">
@@ -16,38 +16,9 @@ function Dashboard () {
                     </Row>
                 </Container>
             </Container>
+
+            <Games/>
             
-            
-            <Container fluid className="home-bot-cont">
-                    <Container className="home-bot-cont2">
-                        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                            <h1 className="home-bot--title">Browse a few genres!</h1>
-                        </Row>
-                        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                            {/* <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>
-                            <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>  
-                            <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>  
-                            <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>  
-                            <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>  
-                            <Col className="home-bot-card">
-                                <GameCard img="" title="" url="" />
-                            </Col>   */}
-                        </Row>
-                    </Container>
-            </Container>
         </section>
-        </>
     );
 }
-
-export default Dashboard;
