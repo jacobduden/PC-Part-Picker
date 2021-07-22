@@ -5,11 +5,12 @@ export const GET_ME = gql`
         _id
         username
         email
-        savedParts{
+        savedGames{
             # _id
-            partId
+            gameId
             seller
             price
+            title
             description
             image
             link

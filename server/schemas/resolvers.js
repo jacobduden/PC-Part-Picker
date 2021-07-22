@@ -1,4 +1,4 @@
-const { User, Part } = require('../models');
+const { User, Game } = require('../models');
 const { AuthenticationError } = require('apollo-server-express')
 const { signToken } = require('../utils/Auth');
 
@@ -9,7 +9,7 @@ me: async (context, args)=>{
     if(context.user){
         const userData = await User.findOne({})
         .select('-__v -password')
-        .poputlate('parts')
+        .poputlate('games')
         return userData
     }
     throw new AuthenticationError('No user found!')
@@ -36,22 +36,22 @@ me: async (context, args)=>{
             return {token, user}
         },
 
-        savePart: async (context, args)=>{
+        saveGame: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
-                    {$addToSet:{partInput: args.input}},
+                    {$addToSet:{gameInput: args.input}},
                     {new: true}
                 );
                 return updateUser
             }
             throw new AuthenticationError('Must be logged in to add a part to the build cart!');
         },
-        removePart: async (context, args)=>{
+        saveGame: async (context, args)=>{
             if(context.user){
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
-                    {$pull: {partId: args.partId}},
+                    {$pull: {gameId: args.gameId}},
                     {new: true}
                 );
                 return updateUser
