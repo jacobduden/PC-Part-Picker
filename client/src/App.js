@@ -26,6 +26,7 @@ function App(){
                     <Route path='/Contact' component= {Contact}/>
                     <Route path='/PrivacyPolicy' component= {PrivacyPolicy}/>
                     <Route path='/Login' component = {Login}/>
+                    <Route path='/underConst' component = {UnderConst}/>
                 </Switch>
                 <Footer/> 
             </Router>
