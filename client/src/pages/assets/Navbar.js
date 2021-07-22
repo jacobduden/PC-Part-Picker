@@ -29,7 +29,7 @@ export default function NavBar(){
                                 <Nav.Link onClick={() => updateExpanded(false)}>Player Card</Nav.Link>
                             </LinkContainer>
 							<LinkContainer to="/">
-								<Nav.Item>
+								<Nav.Item className="nav-brand">
 									<Navbar.Brand className="mx-auto">Game Finder</Navbar.Brand>
 								</Nav.Item>
 							</LinkContainer>
