@@ -13,7 +13,7 @@ Version 1.0
 </p>
 
 <p>
-The Run Buddy website located at  is a copyrighted work belonging to Run Buddy. Certain
+The Game Finder website located at  is a copyrighted work belonging to Game Finder. Certain
 features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site
 in connection with such features.
 </p>
@@ -109,7 +109,7 @@ affected his or her settlement with the debtor."
 </p>
 
 <p>
-Cookies and Web Beacons. Like any other website, Run Buddy uses â€˜cookiesâ€™. These cookies are used to store
+Cookies and Web Beacons. Like any other website, Game Finder uses â€˜cookiesâ€™. These cookies are used to store
 information including visitorsâ€™ preferences, and the pages on the website that the visitor accessed or visited.
 The information is used to optimize the usersâ€™ experience by customizing our web page content based on visitorsâ€™
 browser type and/or other information.
