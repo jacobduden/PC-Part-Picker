@@ -46,8 +46,21 @@
 .home-main-sect{
   height:100% !important;
 }
+.Buttons a{
+  width: 8vw;
+  background-color: #be9e44 !important;
+  background: #be9e44 !important;
+  border-color: #be9e44 !important;
+}
 .Buttons{
+  width: 100%;
   display: flex;
   justify-content: center;
-  color: #be9e44 !important;
+  align-items: flex-end;
+}
+#logIN{
+  margin-right: 1rem;
+}
+#signUP{
+  margin-left: 1rem;
 }
