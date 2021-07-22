@@ -1,0 +1,25 @@
+.Login{
+    padding: 7rem 0 !important;
+    color: #be9e44 !important;
+    position: relative !important;
+    height: 78.5vh !important;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+}
+.Login2{
+    padding: 0rem 0 5rem !important;
+    margin-top: 15em !important;
+}
+.LoginSec{
+    height: 100% !important;
+}
+.Login form{
+    margin: 0 auto !important;
+    max-width: 220px !important;
+}
+#logIN{
+    background-color: #be9e44 !important;
+    background: #be9e44 !important;
+    border-color: #be9e44 !important;
+    margin-top: 3vh !important;
+}
