@@ -1,0 +1,69 @@
+.footerContainer {
+background-color: #131313;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footerLinks {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.footerWrapper {
+  display: flex;
+}
+.footerLinkItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+.footerLinkItems h2 {
+  margin-bottom: 16px;
+  color: #be9e44;
+}
+.footerLinkItems a {
+  color: #be9e44;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footerLinkItems a:hover {
+  color: #8b6d1b;
+  transition: 0.2s ease-out;
+}
+.media {
+  max-width: 1000px;
+  width: 100%;
+}
+.mediaWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+.mediaLogo {
+  color: #be9e44;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.copyRight {
+  color: #be9e44;
+  margin-bottom: 16px;
+}
