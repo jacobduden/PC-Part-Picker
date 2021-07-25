@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import Navbar from './pages/assets/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
@@ -10,17 +9,19 @@ import Games from './pages/GameExplorer/Games'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
+import Signup from './pages/Signup/Signup'
 import Wishlist from './pages/WishList/Wishlist';
 import UnderConst from './pages/UnderConst/UnderConst';
-import {ApolloProvider} from '@apollo/react-hooks'
-import ApolloClient from 'apollo-boost'
+import { ApolloProvider } from '@apollo/react-hooks'
 
-const client = new ApolloClient({ uri: '/graphql' })
+import { default as ApolloClient } from 'apollo-boost';
+
+const client = new ApolloClient()
+ 
 
 function App(){
     return(
         <ApolloProvider client={client}>
-        <div className="bg">
             <Router>
                 <Navbar />
                 <Switch>
@@ -31,11 +32,11 @@ function App(){
                     <Route path='/Contact' component= {Contact}/>
                     <Route path='/PrivacyPolicy' component= {PrivacyPolicy}/>
                     <Route path='/Login' component = {Login}/>
+                    <Route path='/Signup' component = {Signup}/>
                     <Route path='/underConst' component = {UnderConst}/>
                 </Switch>
                 <Footer/> 
             </Router>
-        </div>
         </ApolloProvider>
     );
 }

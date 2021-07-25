@@ -4,9 +4,6 @@ const { signToken } = require('../utils/Auth');
 
 
 const resolvers = {
-    gameSchema: async ()=>{
-
-    },
     Query: {
 me: async (context, args)=>{
     if(context.user){

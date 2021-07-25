@@ -3,7 +3,6 @@ export const GET_ME = gql`
 {
     me {
         _id
-        username
         email
         savedGames{
             # _id

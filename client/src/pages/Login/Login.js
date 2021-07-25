@@ -42,13 +42,13 @@ function Login() {
         <Form.Group size="lg" controlId="userEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control
-            type="email" value={userFormData.email} onChange={handleInputChange} placeholder= 'Enter your email'
+            type="email" name='email' value={userFormData.email} onChange={handleInputChange} placeholder= 'Enter your email'
           />
         </Form.Group>
         <Form.Group size="lg" controlId="userPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control
-            type="password" value={userFormData.password} onChange={handleInputChange} placeholder='Enter your password'
+            type="password" name='password' value={userFormData.password} onChange={handleInputChange} placeholder='Enter your password'
           />
         </Form.Group>
         <Button block size="lg" type="submit" id='logIN' href='#'>

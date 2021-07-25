@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jacobduden/PC-Part-Picker#readme",
   "dependencies": {
+    "apollo-server": "^3.0.2",
     "apollo-server-express": "^2.25.2",
     "build": "^0.1.4",
     "concurrently": "^6.2.0",

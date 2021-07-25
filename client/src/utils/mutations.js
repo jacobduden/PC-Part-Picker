@@ -1,21 +1,11 @@
 import gql from 'graphql-tag';
 
 export const CREATE_USER = gql`
-mutation addUser($username: String!, $password: String!) {
-    addUser(username: $username, password: $password) {
+mutation addUser($email: String!, $password: String!) {
+    addUser(email: $email, password: $password) {
         User {
         _id
-        username
         email
-        savedGames {
-                gameId
-                seller
-                title
-                price
-                image
-                description
-                link
-            }
         }
     }
 }
