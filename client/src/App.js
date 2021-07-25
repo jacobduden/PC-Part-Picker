@@ -12,13 +12,15 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup'
 import Wishlist from './pages/WishList/Wishlist';
 import UnderConst from './pages/UnderConst/UnderConst';
-import { ApolloProvider } from '@apollo/react-hooks'
+import { ApolloProvider, HttpLink, InMemoryCache } from '@apollo/react-hooks'
+import { ApolloClient } from 'apollo-boost';
 
-import { default as ApolloClient } from 'apollo-boost';
-
-const client = new ApolloClient()
+const link = new HttpLink({uri: '/graphql'})
+const client = new ApolloClient({
+    link: link,
+    cache: new InMemoryCache()
+});
  
-
 function App(){
     return(
         <ApolloProvider client={client}>

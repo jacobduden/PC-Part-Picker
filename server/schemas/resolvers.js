@@ -18,7 +18,7 @@ me: async (context, args)=>{
 
     Mutation: {
         addUser: async (context, args) =>{
-            const user = await User.create(args.body.variables)
+            const user = await User.create(args)
             const token = signToken(user)
             return {token, user}
         },

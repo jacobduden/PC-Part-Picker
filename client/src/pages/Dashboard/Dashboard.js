@@ -4,9 +4,9 @@ import './Dashboard.css';
 import Games from '../GameExplorer/Games.js';
 
 // import { gameRequest } from '../../utils/API';
-import { GameAction, reqGame } from '../../utils/gameQuery';
+// import { GameAction } from '../../utils/gameQuery';
 export default function Dashboard () {
-    GameAction();
+    
     return (
         <section className='home-main-sect'>
             <Container fluid className="home-main-cont">

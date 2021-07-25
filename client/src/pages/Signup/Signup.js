@@ -21,12 +21,12 @@ function Signup() {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
+            console.log(userFormData)
             const { data } = await addUser({
                 variables: { ...userFormData }
                 
             })
-            console.log(userFormData)
-            Auth.login(data.login.token)
+            Auth.login(data.addUser.token)
         } catch (e) {
             console.error(e)
         }
