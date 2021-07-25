@@ -3,6 +3,7 @@ import { Container, Row, Card} from 'react-bootstrap';
 import './Games.css';
 
 export default function Games(){
+
     return(
         <section className="games-sect">
             <Container fluid className="games-cont">

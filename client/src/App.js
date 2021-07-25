@@ -12,9 +12,14 @@ import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Wishlist from './pages/WishList/Wishlist';
 import UnderConst from './pages/UnderConst/UnderConst';
+import {ApolloProvider} from '@apollo/react-hooks'
+import ApolloClient from 'apollo-boost'
+
+const client = new ApolloClient({ uri: '/graphql' })
 
 function App(){
     return(
+        <ApolloProvider client={client}>
         <div className="bg">
             <Router>
                 <Navbar />
@@ -31,6 +36,7 @@ function App(){
                 <Footer/> 
             </Router>
         </div>
+        </ApolloProvider>
     );
 }
 

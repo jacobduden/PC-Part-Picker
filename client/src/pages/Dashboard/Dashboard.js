@@ -3,7 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './Dashboard.css';
 import Games from '../GameExplorer/Games.js';
 
+// import { gameRequest } from '../../utils/API';
+import { GameAction, reqGame } from '../../utils/gameQuery';
 export default function Dashboard () {
+    GameAction();
     return (
         <section className='home-main-sect'>
             <Container fluid className="home-main-cont">

@@ -10,26 +10,22 @@ type User {
 
 type gameSchema {
     gameId: String
-    seller: String
-    Title: String
-    price: Int
-    image: String
-    description: String
-    link: String
-    genre: String
-    platform: String
+    name: String
+    background_image: String
+    esrb_rating: Int
+    genres: String
+    platforms: String
+    metacritic: Int
 }
 
 input gameInput {
     gameId: String
-    seller: String
-    title: String
-    price: Int
-    image: String
-    description: String
-    link: String
-    genre: String
-    platform: String
+    name: String
+    background_image: String
+    esrb_rating: Int
+    genres: String
+    platforms: String
+    metacritic: Int
 }
 
 type Query {
