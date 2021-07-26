@@ -23,8 +23,8 @@ me: async (context, args)=>{
             return {token, user}
         },
         
-        login: async ({email, password})=>{
-            const user = await User.findOne({email})
+        login: async (context, { email, password })=>{
+            const user = await User.findOne({ email })
             if(!user){
                 throw new AuthenticationError('That is not a valid email address.')
             }

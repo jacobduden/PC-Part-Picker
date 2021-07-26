@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost/SUCCESS",{
+mongoose.connect("mongodb://localhost/gamefndr",{
         useCreateIndex:true,
         useNewUrlParser: true,
         useUnifiedTopology: true}).then(()=> {

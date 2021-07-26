@@ -51,7 +51,7 @@ function Login() {
             type="password" name='password' value={userFormData.password} onChange={handleInputChange} placeholder='Enter your password'
           />
         </Form.Group>
-        <Button type="submit" id='logIN' href='#'>
+        <Button name='button' type="submit" id='logIN'>
           LOGIN
         </Button>
       </Form>
