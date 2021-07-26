@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 
 const uri = procces.env.MONGODB_URI
-mongoose.connect("mongodb://127.0.0.1:27017/gamefndr",{
+mongoose.connect("mongodb://127.0.0.1:27017/gamefndr" || uri,{
         useCreateIndex:true,
         useNewUrlParser: true,
         useUnifiedTopology: true}).then(()=> {
