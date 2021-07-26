@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://https://git.heroku.com/gamefndr.git/gamefndr",{
+mongoose.connect("mongodb://127.0.0.1:27017/gamefndr",{
         useCreateIndex:true,
         useNewUrlParser: true,
         useUnifiedTopology: true}).then(()=> {
