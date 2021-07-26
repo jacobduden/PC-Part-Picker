@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-<<<<<<< HEAD
 import Navbar from './pages/assets/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
@@ -43,19 +42,5 @@ function App(){
         </ApolloProvider>
     );
 }
-=======
-import Dashboard from './comps/pages/Dashboard';
-import Navbar from './pages/assets/Navbar';
-
-function App() {
-  return (
-    <>
-    <Navbar/>
-    <Dashboard/>
-    </>
-
-  );
-};
->>>>>>> 731fe45a601eb09046455ed6c7dbe3ea06dbb435
 
 export default App;
