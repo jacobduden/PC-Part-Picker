@@ -5,7 +5,7 @@ const { typeDefs, resolvers } = require('./schemas/index');
 const { authMiddleware } = require('./utils/Auth')
 const path = require('path');
 require('dotenv').config();
-const uri = procces.env.MONGODB_URI
+const uri = process.env.MONGODB_URI
 const app = express();
 const PORT = process.env.MONGODB_URI || 3001;
 require('dotenv').config()
