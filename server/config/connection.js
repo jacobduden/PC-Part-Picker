@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-mongoose.connect("mongodb://localhost/gamefndr",{
+mongoose.connect(process.env.MONGODB_UR,{
         useCreateIndex:true,
         useNewUrlParser: true,
         useUnifiedTopology: true}).then(()=> {
