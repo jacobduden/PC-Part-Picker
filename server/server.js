@@ -4,9 +4,10 @@ const { ApolloServer } = require('apollo-server-express');
 const { typeDefs, resolvers } = require('./schemas/index');
 const { authMiddleware } = require('./utils/Auth')
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
-const PORT =  3001;
+const PORT = process.env.MONGODB_URI || 3001;
 require('dotenv').config()
 
 const server = new ApolloServer({
@@ -25,8 +26,8 @@ app.get('*', (req, res) => {
 
 db.once('open', () => {
     app.listen(PORT, () => {
-        console.log(`Navigate to localhost:${PORT}`)
-        console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+        console.log(`Navigate to :${PORT}`)
+        console.log(`Use GraphQL at :${PORT}${server.graphqlPath}`);
         console.log(server.graphqlPath)
     })
 })
