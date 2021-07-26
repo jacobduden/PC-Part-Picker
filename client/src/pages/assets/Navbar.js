@@ -1,22 +1,10 @@
-import React, {useState} from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container';
-import {LinkContainer} from "react-router-bootstrap";
-import './Navbar.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
 
-export default function NavBar(){
-
-    const [expand, updateExpanded] = useState(false);
-    const [navColour, updateNavbar] = useState(false);
-    function scrollHandler() {
-        if (window.scrollY >= 20) {updateNavbar(true);} 
-        else {updateNavbar(false);}
-    }
-    
-    window.addEventListener("scroll", scrollHandler);
-
+function Navbar() {
     return (
+<<<<<<< HEAD
             <Navbar fixed="top" expand="md" expanded={expand} className={navColour ? "sticky" : "navbar"}>
                 <Container>
                     <Navbar.Toggle className="ml-auto" aria-controls="responsive-navbar-nav" onClick={()=>{ updateExpanded(expand ? false : "expanded");}}/>
@@ -45,3 +33,40 @@ export default function NavBar(){
             </Navbar>
     );
 }
+=======
+        <>
+            <nav className='navbar'>
+                <div className='navbarContainer'>
+                    <Link to='/dashboard' className='navbar-logo'>
+                        <i className='fab fa-react' /> Game Finder
+                    </Link>
+                    <ul className='navnav'>
+                      <li className='nav-item'>
+                        <Link to='/#' className='nav-links'>
+                          Home
+                        </Link>
+                      </li>
+                      <li className='nav-item'>
+                        <Link to='/#' className='nav-links'>
+                          Hot Releases
+                        </Link>
+                      </li>
+                      <li className='nav-item'>
+                        <Link to='/#' className='nav-links'>
+                          Trending
+                        </Link>
+                      </li>
+                      <li className='nav-item'>
+                        <Link to='/contact' className='nav-links'>
+                          Most Played
+                        </Link>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </>
+    )
+}
+
+export default Navbar;
+>>>>>>> 731fe45a601eb09046455ed6c7dbe3ea06dbb435

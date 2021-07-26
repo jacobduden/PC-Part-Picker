@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Container, Row, Col } from 'react-bootstrap';
 import './Dashboard.css';
 import Games from '../GameExplorer/Games.js';
@@ -25,6 +26,18 @@ export default function Dashboard () {
 
             <Games/>
             
+=======
+
+function Dashboard () {
+    return (
+        <>
+        <section className='desc'>
+            <h1> Looking for new games to play?</h1>
+            <h3> Here are some popular games! </h3>
+>>>>>>> 731fe45a601eb09046455ed6c7dbe3ea06dbb435
         </section>
+        </>
     );
 }
+
+export default Dashboard;

@@ -4,7 +4,7 @@ const typeDefs = gql`
 type User {
     _id: ID!
     email: String!
-    savedGames: [gameSchema]
+    savedParts: [partSchema]
 }
 
 type gameSchema {
@@ -37,10 +37,17 @@ type Auth {
     }
 
     type Mutation {
+<<<<<<< HEAD
         login(email: String!, password: String!): Auth
         addUser(email: String!, password: String!): Auth
         saveGame(input: gameInput): User
         removeGame(gameId: String!): User
+=======
+        login(username: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
+        savePart(input: partInput): User
+        removePart(partId: String!): User
+>>>>>>> 731fe45a601eb09046455ed6c7dbe3ea06dbb435
     }
 `;
 

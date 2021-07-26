@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{font-family: 'Montserrat', sans-serif;}
 
 .home-main-cont {
@@ -63,4 +64,10 @@
 }
 #signUP{
   margin-left: 1rem;
+=======
+.desc{
+    display: flex;
+    justify-content: start;
+    padding-left: 15vw;
+>>>>>>> 731fe45a601eb09046455ed6c7dbe3ea06dbb435
 }

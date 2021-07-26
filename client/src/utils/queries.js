@@ -4,12 +4,11 @@ export const GET_ME = gql`
     me {
         _id
         email
-        savedGames{
+        savedParts{
             # _id
-            gameId
+            partId
             seller
             price
-            title
             description
             image
             link
