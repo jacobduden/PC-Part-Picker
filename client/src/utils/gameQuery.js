@@ -10,7 +10,7 @@ export const GameAction = () => {
      return response.json();
         
     }).then(data=>{
-            let action = data.results[0].games
+            /* let action = data.results[0].games
             let strategy = data.results[4].games
             let racing = data.results[11].games
             let adventure = data.results[2].games
@@ -18,6 +18,8 @@ export const GameAction = () => {
             action.forEach(element => {
                 console.log(element)
             });
+            console.log(action); */
+            
     }).catch(err=>{
         console.log(err)
     }) 

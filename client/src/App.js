@@ -12,6 +12,12 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup'
 import Wishlist from './pages/WishList/Wishlist';
 import UnderConst from './pages/UnderConst/UnderConst';
+import ResultsAction from './pages/ResultPages/ResultsAction';
+import ResultsAdventure from './pages/ResultPages/ResultsAdventure';
+import ResultsRoleP from './pages/ResultPages/ResultsRoleP';
+import ResultsSim from './pages/ResultPages/ResultsSim';
+import ResultsSports from './pages/ResultPages/ResultsSports';
+import ResultsStrategy from './pages/ResultPages/ResultsStrategy';
 import { ApolloProvider, HttpLink, InMemoryCache } from '@apollo/react-hooks'
 import { ApolloClient } from 'apollo-boost';
 
@@ -36,6 +42,12 @@ function App(){
                     <Route path='/Login' component = {Login}/>
                     <Route path='/Signup' component = {Signup}/>
                     <Route path='/underConst' component = {UnderConst}/>
+                    <Route path='/ResultsAction' component = {ResultsAction}/>
+                    <Route path='/ResultsAdventure' component = {ResultsAdventure}/>
+                    <Route path='/ResultsRoleP' component = {ResultsRoleP}/>
+                    <Route path='/ResultsSim' component = {ResultsSim}/>
+                    <Route path='/ResultsSports' component = {ResultsSports}/>
+                    <Route path='/ResultsStrategy' component = {ResultsStrategy}/>
                 </Switch>
                 <Footer/> 
             </Router>

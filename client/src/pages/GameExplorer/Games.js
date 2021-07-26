@@ -26,7 +26,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsStrategy">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
@@ -44,7 +44,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsAction">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
@@ -62,7 +62,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsRoleP">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
@@ -80,7 +80,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsSports">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
@@ -98,7 +98,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsAdventure">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
@@ -116,7 +116,7 @@ export default function Games(){
                                         <span>XB</span>
                                         <span>SW</span>
                                     </div>
-                                    <a href="/underConst">Browse Now</a>
+                                    <a href="/ResultsSim">Browse Now</a>
                                 </div>
                             </Card>
                         </Container>
